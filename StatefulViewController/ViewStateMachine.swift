@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 /// Represents the state of the view state machine
 public enum ViewStateMachineState : Equatable {
     case None			// No view shown
@@ -147,14 +146,9 @@ public class ViewStateMachine {
         if let newView = self.viewStore[state] {
             // Add new view using AutoLayout
             newView.alpha = animated ? 0.0 : 1.0
-            newView.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(newView)
             
-            let views = ["view": newView]
-            let hConstraints = NSLayoutConstraint.constraintsWithVisualFormat("|[view]|", options: [], metrics: nil, views: views)
-            let vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options: [], metrics: nil, views: views)
-            self.view.addConstraints(hConstraints)
-            self.view.addConstraints(vConstraints)
+            newView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         }
         
         let animations: () -> () = {
