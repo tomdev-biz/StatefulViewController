@@ -15,7 +15,7 @@
 		4D64515E1A64079300108EA3 /* StatefulViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6451461A64079200108EA3 /* StatefulViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D6451681A64089800108EA3 /* StatefulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6451661A64089800108EA3 /* StatefulViewController.swift */; };
 		4D6451691A64089800108EA3 /* ViewStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6451671A64089800108EA3 /* ViewStateMachine.swift */; };
-		4DC230DD1BB5BA810083B95A /* StatefulViewControllerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC230DC1BB5BA810083B95A /* StatefulViewControllerImplementation.swift */; settings = {ASSET_TAGS = (); }; };
+		4DC230DD1BB5BA810083B95A /* StatefulViewControllerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC230DC1BB5BA810083B95A /* StatefulViewControllerImplementation.swift */; };
 		4DE62AE219B658610021630A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE62AE119B658610021630A /* AppDelegate.swift */; };
 		4DE62AE419B658610021630A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE62AE319B658610021630A /* ViewController.swift */; };
 		4DE62AE719B658610021630A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE62AE519B658610021630A /* Main.storyboard */; };
@@ -287,6 +287,7 @@
 				TargetAttributes = {
 					4D6451451A64079200108EA3 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0830;
 					};
 					4D64514F1A64079200108EA3 = {
 						CreatedOnToolsVersion = 6.2;
@@ -437,6 +438,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -460,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aschuch.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
